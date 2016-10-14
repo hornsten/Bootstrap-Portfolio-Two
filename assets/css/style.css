@@ -8,7 +8,11 @@ body {
 	
 }
 
-#connect {
+textarea {
+	margin-bottom: 15px;
+}
+
+.panel {
 	margin-bottom: 70px;
 }
 
@@ -36,14 +40,14 @@ h1, h2, h3, h4 {
 *==Navigation and Header==
 */
 
-#my-name {
-	background-color:  #4aaaa5;
-	color: #ffffff;
-	margin-left: 0.4%;
+.navbar-brand {
+	padding-top: 0;
+
 }
 
-#my-name:hover {
-	background-color: #337571; 
+.navbar .btn {
+    padding-top: 6px;
+    padding-bottom: 12px;
 }
 
 
@@ -119,21 +123,6 @@ input[type=submit]:hover {
 *==Sidebar Content Area==
 */
 
-.connect  {
-	
-	width: 18%;
-	height: auto;
-	background: #ffffff;
-	float: left;
-	margin-left: 3%;
-	margin-right: 7%;
-	margin-top: 30px;
-	padding: 10px 20px 30px 20px;
-	border: 1px solid #dddddd;
-	text-align: center;
-	min-width: 150px;
-	
-}
 
 
 
@@ -147,12 +136,9 @@ input[type=submit]:hover {
 	height: 150px;
 }
 
-.footer {
-	background: #666666;
-	border-top: 6px solid #4aaaa5;
-	text-align: center;
-	color: #ccc;
-	font-size: 10px;
 
+.navbar-fixed-bottom {
+	color: white;
 }
+
 
