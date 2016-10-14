@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Jessica Hornsten Contact</title>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+<!-- My Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -23,9 +24,9 @@
     </div>
     <div class="col-sm-4">
       <ul class="nav navbar-nav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index-b.html">About</a></li>
+        <li><a href="portfolio-b.html">Portfolio</a></li>
+        <li><a href="contact-b.html">Contact</a></li>
       </ul>
       </div>
       </div>
@@ -39,17 +40,36 @@
     <h3 class="panel-title">About Me</h3>
   </div>
   <div class="panel-body">
-    Panel content
+    <form>
+    <div class="form-group">
+    <label for="exampleInputName2">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <textarea class="form-control" rows="15"></textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
   </div>
 </div>
-	</div>
 	<div class="col-sm-4">
-		<div class="panel panel-default">
+		<div class="panel panel-default" id="connect">
   <div class="panel-heading">
     <h3 class="panel-title text-center">Connect With Me</h3>
   </div>
-  <div class="panel-body">
-    Panel content
+    <div class="panel-body text-center">
+      <a href="https://github.com/hornsten" target="_blank">
+      <img src="assets/images/1475266384_github_square_black.png" alt="Go to my Github Account" class="icon">
+      </a>
+      <a href="https://www.linkedin.com/in/jessica-hornsten-b90b24126" target="_blank">
+      <img src="assets/images/1475266432_linkedin_square_color.png" alt="Go to my Linkedin Account" class="icon">
+      </a>
+      <a href="http://stackoverflow.com/users/6781318/jessica-hornsten" target="_blank">
+      <img src="assets/images/1475266465_overflow.png" alt="Go to my Stack Overflow Account" class="icon">
+      </a>  
   </div>
 </div>
 	</div>
@@ -57,7 +77,7 @@
 </div>
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
-    <p class="text-center">Copyright 2016 Jessica Hornsten</p>
+    <p class="text-center">&copy; Copyright 2016 Jessica Hornsten</p>
   </div>
 </nav>
 </body>
