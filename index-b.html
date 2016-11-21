@@ -1,28 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<script type="text/javascript" src="//api.skyscanner.net/api.ashx?key=2a208cf3-bdbb-494f-b25e-ad293cada1d0"></script>
+<script type="text/javascript">
+skyscanner.load("snippets", "2");
 
-<head>
-  <script type="text/javascript" src="//api.skyscanner.net/api.ashx?key=b7290ac3-1f9f-4575-88a7-89fed0c61f7f"></script>
-  <script type="text/javascript">
-  skyscanner.load("snippets", "2");
+function main() {
+  var snippet = new skyscanner.snippets.SearchPanelControl();
+  snippet.setShape("box400x400");
+  snippet.setCulture("en-GB");
+  snippet.setCurrency("USD");
+  snippet.setMarket("US");
+  snippet.setColourScheme("classicbluelight");
+  snippet.setProduct("flights", "1");
+  snippet.setProduct("hotels", "2");
+  snippet.setProduct("carhire", "3");
 
-  function main() {
-    var snippet = new skyscanner.snippets.SearchPanelControl();
-    snippet.setShape("box300x250");
-    snippet.setCulture("en-GB");
-    snippet.setCurrency("USD");
-    snippet.setProduct("flights", "1");
-    snippet.setProduct("hotels", "2");
-    snippet.setProduct("carhire", "3");
-
-    snippet.draw(document.getElementById("snippet_searchpanel"));
-  }
-  skyscanner.setOnLoadCallback(main);
-  </script>
-</head>
-
-<body>
-  <div id="snippet_searchpanel" style="width: auto; height:auto;"></div>
-</body>
-
-</html>
+  snippet.draw(document.getElementById("snippet_searchpanel"));
+}
+skyscanner.setOnLoadCallback(main);
+</script>
+<div id="snippet_searchpanel" style="width: auto; height:auto;"></div>
